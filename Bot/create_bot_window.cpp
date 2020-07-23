@@ -1,6 +1,7 @@
 #include "create_bot_window.h"
 #include "ui_create_bot_window.h"
 #include <QtGui>
+#include <QTranslator>
 Create_bot_window::Create_bot_window(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Create_bot_window)
@@ -13,6 +14,24 @@ Create_bot_window::Create_bot_window(QWidget *parent) :
         palette.setBrush(QPalette::Background, bkgnd);
         this->setPalette(palette);
       this->setWindowFlags(Qt::FramelessWindowHint);
+
+        // Задаём два пункта с текстом локалей в комбобоксе
+            ui->comboBox_2->addItems(QStringList() << "en_US" << "ru_RU");
+
+            // подключаем к сигналу изменения пункта комбобокса лямбда функцию,
+            // в которой будет изменяться перевод приложения
+            // Здесь имеется интересный момент. Поскольку QComboBox имеет перегрузку сигнатуры сигнала,
+            // то нам необходимо скастовать сигнал к нужной сигнатуре.
+            // В данном случае будем использовать название пункта при его изменении
+            connect(ui->comboBox_2, static_cast<void (QComboBox::*)(const QString &)>(&QComboBox::currentIndexChanged),
+                    [=](const QString &str){
+                qtLanguageTranslator1.load("QtLanguage_" + str, ".");   // Загружаем перевод
+                qApp->installTranslator(&qtLanguageTranslator1);        // Устанавливаем перевод в приложение
+            });
+
+            // Сделаем первоначальную инициализацию перевода для окна прилоежния
+            qtLanguageTranslator1.load(QString("QtLanguage_") + QString("en_US"));
+            qApp->installTranslator(&qtLanguageTranslator1);
 }
 
 Create_bot_window::~Create_bot_window()
@@ -189,4 +208,11 @@ void Create_bot_window::on_Back_clicked()
 {
     this->close();
     emit menuW();
+}
+void Create_bot_window::changeEvent(QEvent *event)
+{
+    // В случае получения события изменения языка приложения
+    if (event->type() == QEvent::LanguageChange) {
+        ui->retranslateUi(this);    // переведём окно заново
+    }
 }

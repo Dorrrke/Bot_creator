@@ -53,7 +53,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(300, 392);
+        MainWindow->resize(303, 406);
         MainWindow->setStyleSheet(QString::fromUtf8("background-color:rgb(255, 255, 255)"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
@@ -276,7 +276,7 @@ public:
         comboBox->setPalette(palette);
         QFont font3;
         font3.setFamily(QString::fromUtf8("Arial Nova"));
-        font3.setPointSize(10);
+        font3.setPointSize(9);
         font3.setBold(false);
         font3.setItalic(false);
         font3.setWeight(50);

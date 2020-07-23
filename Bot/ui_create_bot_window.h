@@ -91,6 +91,7 @@ public:
     QGridLayout *gridLayout_2;
     QLabel *label_14;
     QComboBox *comboBox;
+    QComboBox *comboBox_2;
 
     void setupUi(QWidget *Create_bot_window)
     {
@@ -200,24 +201,22 @@ public:
         horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
         Back = new QPushButton(Create_bot_window);
         Back->setObjectName(QString::fromUtf8("Back"));
-        QFont font4;
-        font4.setPointSize(18);
-        Back->setFont(font4);
+        Back->setFont(font1);
         Back->setStyleSheet(QString::fromUtf8("border-image: url(:/resourec/img/arrows-309037_640.png)"));
 
-        horizontalLayout_9->addWidget(Back);
+        horizontalLayout_9->addWidget(Back, 0, Qt::AlignLeft);
 
         pushButton_2 = new QPushButton(Create_bot_window);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        QFont font5;
-        font5.setFamily(QString::fromUtf8("Arial Nova"));
-        font5.setPointSize(18);
-        font5.setBold(false);
-        font5.setWeight(50);
-        pushButton_2->setFont(font5);
+        QFont font4;
+        font4.setFamily(QString::fromUtf8("Arial Nova"));
+        font4.setPointSize(14);
+        font4.setBold(false);
+        font4.setWeight(50);
+        pushButton_2->setFont(font4);
         pushButton_2->setStyleSheet(QString::fromUtf8("border-image: url(:/resourec/img/8.png) 0 0 0 0 ;"));
 
-        horizontalLayout_9->addWidget(pushButton_2);
+        horizontalLayout_9->addWidget(pushButton_2, 0, Qt::AlignLeft);
 
 
         gridLayout_10->addLayout(horizontalLayout_9, 0, 0, 1, 1);
@@ -226,9 +225,9 @@ public:
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         label_3 = new QLabel(Create_bot_window);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        QFont font6;
-        font6.setFamily(QString::fromUtf8("Sitka Text"));
-        label_3->setFont(font6);
+        QFont font5;
+        font5.setFamily(QString::fromUtf8("Sitka Text"));
+        label_3->setFont(font5);
         label_3->setStyleSheet(QString::fromUtf8("border-image: url(:) 0 0 0 0;\n"
 "background-color:rgb(170, 0, 0);\n"
 "\n"
@@ -249,7 +248,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(label_4->sizePolicy().hasHeightForWidth());
         label_4->setSizePolicy(sizePolicy);
-        label_4->setFont(font6);
+        label_4->setFont(font5);
         label_4->setStyleSheet(QString::fromUtf8("border-image: url(:) 0 0 0 0;\n"
 "background-color:rgb(170, 0, 0);\n"
 "\n"
@@ -288,10 +287,10 @@ public:
 
         AddMess = new QPushButton(Create_bot_window);
         AddMess->setObjectName(QString::fromUtf8("AddMess"));
-        QFont font7;
-        font7.setFamily(QString::fromUtf8("Palatino Linotype"));
-        font7.setPointSize(10);
-        AddMess->setFont(font7);
+        QFont font6;
+        font6.setFamily(QString::fromUtf8("Palatino Linotype"));
+        font6.setPointSize(10);
+        AddMess->setFont(font6);
         AddMess->setStyleSheet(QString::fromUtf8("border-image: url(:/resourec/img/add.png) 4 2 2 2;"));
 
         horizontalLayout_4->addWidget(AddMess);
@@ -309,12 +308,12 @@ public:
 
         CreateButton = new QPushButton(Create_bot_window);
         CreateButton->setObjectName(QString::fromUtf8("CreateButton"));
-        QFont font8;
-        font8.setFamily(QString::fromUtf8("Arial Nova"));
-        font8.setPointSize(14);
-        font8.setBold(true);
-        font8.setWeight(75);
-        CreateButton->setFont(font8);
+        QFont font7;
+        font7.setFamily(QString::fromUtf8("Arial Nova"));
+        font7.setPointSize(14);
+        font7.setBold(true);
+        font7.setWeight(75);
+        CreateButton->setFont(font7);
         CreateButton->setStyleSheet(QString::fromUtf8("border-image: url(:/resourec/img/kisspng-clip-art-portable-network-graphics-computer-icons-our-process-1-24x1-5d2368e39b6c10.6861182015626016996366.jpg);"));
 
         gridLayout_10->addWidget(CreateButton, 15, 3, 1, 1);
@@ -327,7 +326,7 @@ public:
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         label_13 = new QLabel(Create_bot_window);
         label_13->setObjectName(QString::fromUtf8("label_13"));
-        label_13->setFont(font6);
+        label_13->setFont(font5);
         label_13->setStyleSheet(QString::fromUtf8("border-image: url(:) 0 0 0 0;\n"
 "background-color:rgb(170, 0, 0);\n"
 "\n"
@@ -337,7 +336,7 @@ public:
 
         label_12 = new QLabel(Create_bot_window);
         label_12->setObjectName(QString::fromUtf8("label_12"));
-        label_12->setFont(font6);
+        label_12->setFont(font5);
         label_12->setStyleSheet(QString::fromUtf8("border-image: url(:) 0 0 0 0;\n"
 "background-color:rgb(170, 0, 0);\n"
 "\n"
@@ -418,13 +417,13 @@ public:
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         checkBox_6 = new QCheckBox(Create_bot_window);
         checkBox_6->setObjectName(QString::fromUtf8("checkBox_6"));
-        QFont font9;
-        font9.setFamily(QString::fromUtf8("Sitka Text"));
-        font9.setPointSize(10);
-        font9.setBold(true);
-        font9.setItalic(false);
-        font9.setWeight(75);
-        checkBox_6->setFont(font9);
+        QFont font8;
+        font8.setFamily(QString::fromUtf8("Sitka Text"));
+        font8.setPointSize(10);
+        font8.setBold(true);
+        font8.setItalic(false);
+        font8.setWeight(75);
+        checkBox_6->setFont(font8);
         checkBox_6->setStyleSheet(QString::fromUtf8("border-image:rgb(255, 255, 255)"));
 
         horizontalLayout_3->addWidget(checkBox_6);
@@ -527,37 +526,37 @@ public:
 
         label = new QLabel(Create_bot_window);
         label->setObjectName(QString::fromUtf8("label"));
-        QFont font10;
-        font10.setFamily(QString::fromUtf8("Sitka Heading"));
-        font10.setPointSize(14);
-        font10.setBold(true);
-        font10.setWeight(75);
-        label->setFont(font10);
+        QFont font9;
+        font9.setFamily(QString::fromUtf8("Sitka Heading"));
+        font9.setPointSize(14);
+        font9.setBold(true);
+        font9.setWeight(75);
+        label->setFont(font9);
         label->setStyleSheet(QString::fromUtf8("border-image:rgb(255, 255, 255)"));
 
         gridLayout_10->addWidget(label, 6, 0, 1, 1);
 
         label_2 = new QLabel(Create_bot_window);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        QFont font11;
-        font11.setFamily(QString::fromUtf8("Sitka Banner"));
-        font11.setPointSize(12);
-        font11.setBold(true);
-        font11.setWeight(75);
-        label_2->setFont(font11);
+        QFont font10;
+        font10.setFamily(QString::fromUtf8("Sitka Banner"));
+        font10.setPointSize(12);
+        font10.setBold(true);
+        font10.setWeight(75);
+        label_2->setFont(font10);
         label_2->setStyleSheet(QString::fromUtf8("border-image:rgb(255, 255, 255)"));
 
         gridLayout_10->addWidget(label_2, 7, 0, 1, 2);
 
         label_11 = new QLabel(Create_bot_window);
         label_11->setObjectName(QString::fromUtf8("label_11"));
-        QFont font12;
-        font12.setFamily(QString::fromUtf8("Comic Sans MS"));
-        font12.setPointSize(14);
-        font12.setBold(true);
-        font12.setItalic(false);
-        font12.setWeight(75);
-        label_11->setFont(font12);
+        QFont font11;
+        font11.setFamily(QString::fromUtf8("Comic Sans MS"));
+        font11.setPointSize(14);
+        font11.setBold(true);
+        font11.setItalic(false);
+        font11.setWeight(75);
+        label_11->setFont(font11);
         label_11->setStyleSheet(QString::fromUtf8("border-image: url(:) 0 0 0 0;\n"
 ""));
 
@@ -567,7 +566,7 @@ public:
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         label_14 = new QLabel(Create_bot_window);
         label_14->setObjectName(QString::fromUtf8("label_14"));
-        label_14->setFont(font6);
+        label_14->setFont(font5);
         label_14->setStyleSheet(QString::fromUtf8("border-image: url(:) 0 0 0 0;\n"
 ""));
 
@@ -601,6 +600,12 @@ public:
 
 
         gridLayout_10->addLayout(gridLayout_2, 5, 0, 1, 2);
+
+        comboBox_2 = new QComboBox(Create_bot_window);
+        comboBox_2->setObjectName(QString::fromUtf8("comboBox_2"));
+        comboBox_2->setStyleSheet(QString::fromUtf8("  border-image: url(:) 0 0 0 0;"));
+
+        gridLayout_10->addWidget(comboBox_2, 15, 0, 1, 1, Qt::AlignLeft);
 
 
         retranslateUi(Create_bot_window);

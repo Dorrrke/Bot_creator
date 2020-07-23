@@ -4,7 +4,8 @@
 #include <QWidget>
 #include<QFileDialog>
 #include<creator.h>
-
+#include <QTranslator>
+#include <QEvent>
 
 namespace Ui {
 class Create_bot_window;
@@ -68,9 +69,13 @@ private slots:
 
 
     void on_Back_clicked();
-
+protected:
+    // Метод получения событий в главном окне приложения
+    // В нём будет производиться проверка события смены перевода приложения
+    void changeEvent(QEvent * event) override;
 private:
     Ui::Create_bot_window *ui;
+    QTranslator qtLanguageTranslator1;   // Выделяем перевод в отдельном поле, иначе ничего работать не будет
     QPoint myPos1;
     Creator bot;
     bool mes_permiss;
