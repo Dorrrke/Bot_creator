@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Create_bot_window_t {
-    QByteArrayData data[26];
-    char stringdata0[510];
+    QByteArrayData data[27];
+    char stringdata0[534];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -57,7 +57,8 @@ QT_MOC_LITERAL(21, 404, 19), // "on_AddMafia_clicked"
 QT_MOC_LITERAL(22, 424, 21), // "on_pushButton_clicked"
 QT_MOC_LITERAL(23, 446, 23), // "on_CreateButton_clicked"
 QT_MOC_LITERAL(24, 470, 23), // "on_pushButton_2_clicked"
-QT_MOC_LITERAL(25, 494, 15) // "on_Back_clicked"
+QT_MOC_LITERAL(25, 494, 15), // "on_Back_clicked"
+QT_MOC_LITERAL(26, 510, 23) // "on_pushButton_3_clicked"
 
     },
     "Create_bot_window\0menuW\0\0mouseMoveEvent\0"
@@ -73,7 +74,7 @@ QT_MOC_LITERAL(25, 494, 15) // "on_Back_clicked"
     "on_checkBox_6_stateChanged\0"
     "on_AddMafia_clicked\0on_pushButton_clicked\0"
     "on_CreateButton_clicked\0on_pushButton_2_clicked\0"
-    "on_Back_clicked"
+    "on_Back_clicked\0on_pushButton_3_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -83,7 +84,7 @@ static const uint qt_meta_data_Create_bot_window[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      22,   14, // methods
+      23,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -91,30 +92,31 @@ static const uint qt_meta_data_Create_bot_window[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,  124,    2, 0x06 /* Public */,
+       1,    0,  129,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       3,    1,  125,    2, 0x08 /* Private */,
-       5,    1,  128,    2, 0x08 /* Private */,
-       6,    1,  131,    2, 0x08 /* Private */,
-       7,    0,  134,    2, 0x08 /* Private */,
-       8,    0,  135,    2, 0x08 /* Private */,
-       9,    1,  136,    2, 0x08 /* Private */,
-      11,    1,  139,    2, 0x08 /* Private */,
-      12,    1,  142,    2, 0x08 /* Private */,
-      13,    0,  145,    2, 0x08 /* Private */,
-      14,    1,  146,    2, 0x08 /* Private */,
-      15,    0,  149,    2, 0x08 /* Private */,
-      16,    1,  150,    2, 0x08 /* Private */,
-      17,    0,  153,    2, 0x08 /* Private */,
-      18,    1,  154,    2, 0x08 /* Private */,
-      19,    0,  157,    2, 0x08 /* Private */,
-      20,    1,  158,    2, 0x08 /* Private */,
-      21,    0,  161,    2, 0x08 /* Private */,
-      22,    0,  162,    2, 0x08 /* Private */,
-      23,    0,  163,    2, 0x08 /* Private */,
-      24,    0,  164,    2, 0x08 /* Private */,
-      25,    0,  165,    2, 0x08 /* Private */,
+       3,    1,  130,    2, 0x08 /* Private */,
+       5,    1,  133,    2, 0x08 /* Private */,
+       6,    1,  136,    2, 0x08 /* Private */,
+       7,    0,  139,    2, 0x08 /* Private */,
+       8,    0,  140,    2, 0x08 /* Private */,
+       9,    1,  141,    2, 0x08 /* Private */,
+      11,    1,  144,    2, 0x08 /* Private */,
+      12,    1,  147,    2, 0x08 /* Private */,
+      13,    0,  150,    2, 0x08 /* Private */,
+      14,    1,  151,    2, 0x08 /* Private */,
+      15,    0,  154,    2, 0x08 /* Private */,
+      16,    1,  155,    2, 0x08 /* Private */,
+      17,    0,  158,    2, 0x08 /* Private */,
+      18,    1,  159,    2, 0x08 /* Private */,
+      19,    0,  162,    2, 0x08 /* Private */,
+      20,    1,  163,    2, 0x08 /* Private */,
+      21,    0,  166,    2, 0x08 /* Private */,
+      22,    0,  167,    2, 0x08 /* Private */,
+      23,    0,  168,    2, 0x08 /* Private */,
+      24,    0,  169,    2, 0x08 /* Private */,
+      25,    0,  170,    2, 0x08 /* Private */,
+      26,    0,  171,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
@@ -136,6 +138,7 @@ static const uint qt_meta_data_Create_bot_window[] = {
     QMetaType::Void, QMetaType::Int,   10,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,   10,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -173,6 +176,7 @@ void Create_bot_window::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         case 19: _t->on_CreateButton_clicked(); break;
         case 20: _t->on_pushButton_2_clicked(); break;
         case 21: _t->on_Back_clicked(); break;
+        case 22: _t->on_pushButton_3_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -216,13 +220,13 @@ int Create_bot_window::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 22)
+        if (_id < 23)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 22;
+        _id -= 23;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 22)
+        if (_id < 23)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 22;
+        _id -= 23;
     }
     return _id;
 }

@@ -216,3 +216,8 @@ void Create_bot_window::changeEvent(QEvent *event)
         ui->retranslateUi(this);    // переведём окно заново
     }
 }
+
+void Create_bot_window::on_pushButton_3_clicked()
+{
+    showMinimized ();
+}

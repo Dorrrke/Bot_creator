@@ -69,6 +69,8 @@ private slots:
 
 
     void on_Back_clicked();
+    void on_pushButton_3_clicked();
+
 protected:
     // Метод получения событий в главном окне приложения
     // В нём будет производиться проверка события смены перевода приложения

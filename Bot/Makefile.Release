@@ -126,6 +126,7 @@ release/qrc_resourse.cpp: resourse.qrc \
 		../../../Qt/5.15.0/mingw81_32/bin/rcc.exe \
 		img/kisspng-clip-art-portable-network-graphics-computer-icons-our-process-1-24x1-5d2368e39b6c10.6861182015626016996366.jpg \
 		img/kisspng-logo-brand-font-forward-button-5b29b23921a2a6.1743000215294592571378.jpg \
+		img/icons8-????????-????-32.png \
 		img/1579284620_32-89.jpg \
 		img/SpbGUTelekom.png \
 		img/add.png \
@@ -258,6 +259,9 @@ release/moc_create_bot_window.cpp: create_bot_window.h \
 		Bot.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QString \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QFile \
+		../../../Qt/5.15.0/mingw81_32/include/QtCore/QTranslator \
+		../../../Qt/5.15.0/mingw81_32/include/QtCore/qtranslator.h \
+		../../../Qt/5.15.0/mingw81_32/include/QtCore/QEvent \
 		release/moc_predefs.h \
 		../../../Qt/5.15.0/mingw81_32/bin/moc.exe
 	C:\Qt\5.15.0\mingw81_32\bin\moc.exe $(DEFINES) --include C:/MyRep/Bot_creator/Bot/release/moc_predefs.h -IC:/Qt/5.15.0/mingw81_32/mkspecs/win32-g++ -IC:/MyRep/Bot_creator/Bot -IC:/Qt/5.15.0/mingw81_32/include -IC:/Qt/5.15.0/mingw81_32/include/QtWidgets -IC:/Qt/5.15.0/mingw81_32/include/QtGui -IC:/Qt/5.15.0/mingw81_32/include/QtANGLE -IC:/Qt/5.15.0/mingw81_32/include/QtCore -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_32/i686-w64-mingw32/include create_bot_window.h -o release\moc_create_bot_window.cpp
@@ -489,10 +493,11 @@ release/moc_mainwindow.cpp: mainwindow.h \
 		Bot.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QString \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QFile \
-		info.h \
-		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/QDialog \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QTranslator \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/qtranslator.h \
+		../../../Qt/5.15.0/mingw81_32/include/QtCore/QEvent \
+		info.h \
+		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/QDialog \
 		release/moc_predefs.h \
 		../../../Qt/5.15.0/mingw81_32/bin/moc.exe
 	C:\Qt\5.15.0\mingw81_32\bin\moc.exe $(DEFINES) --include C:/MyRep/Bot_creator/Bot/release/moc_predefs.h -IC:/Qt/5.15.0/mingw81_32/mkspecs/win32-g++ -IC:/MyRep/Bot_creator/Bot -IC:/Qt/5.15.0/mingw81_32/include -IC:/Qt/5.15.0/mingw81_32/include/QtWidgets -IC:/Qt/5.15.0/mingw81_32/include/QtGui -IC:/Qt/5.15.0/mingw81_32/include/QtANGLE -IC:/Qt/5.15.0/mingw81_32/include/QtCore -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_32/i686-w64-mingw32/include mainwindow.h -o release\moc_mainwindow.cpp
@@ -676,6 +681,9 @@ release/create_bot_window.o: create_bot_window.cpp create_bot_window.h \
 		Bot.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QString \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QFile \
+		../../../Qt/5.15.0/mingw81_32/include/QtCore/QTranslator \
+		../../../Qt/5.15.0/mingw81_32/include/QtCore/qtranslator.h \
+		../../../Qt/5.15.0/mingw81_32/include/QtCore/QEvent \
 		ui_create_bot_window.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QVariant \
 		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/QApplication \
@@ -721,7 +729,6 @@ release/create_bot_window.o: create_bot_window.cpp create_bot_window.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/QPushButton \
 		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/qpushbutton.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/QSpacerItem \
-		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/QVBoxLayout \
 		../../../Qt/5.15.0/mingw81_32/include/QtGui/QtGui \
 		../../../Qt/5.15.0/mingw81_32/include/QtGui/QtGuiDepends \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QtCore \
@@ -837,7 +844,6 @@ release/create_bot_window.o: create_bot_window.cpp create_bot_window.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/qtimeline.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/qtimer.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/qtimezone.h \
-		../../../Qt/5.15.0/mingw81_32/include/QtCore/qtranslator.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/qtransposeproxymodel.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/qtypetraits.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/qwaitcondition.h \
@@ -857,7 +863,6 @@ release/create_bot_window.o: create_bot_window.cpp create_bot_window.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtGui/qaccessibleplugin.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtGui/qbackingstore.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtGui/qwindow.h \
-		../../../Qt/5.15.0/mingw81_32/include/QtCore/QEvent \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QMargins \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QRect \
 		../../../Qt/5.15.0/mingw81_32/include/QtGui/qsurface.h \
@@ -1502,10 +1507,11 @@ release/main.o: main.cpp mainwindow.h \
 		Bot.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QString \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QFile \
-		info.h \
-		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/QDialog \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QTranslator \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/qtranslator.h \
+		../../../Qt/5.15.0/mingw81_32/include/QtCore/QEvent \
+		info.h \
+		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/QDialog \
 		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/QApplication \
 		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/qapplication.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/qcoreapplication.h \
@@ -1633,10 +1639,11 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		Bot.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QString \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QFile \
-		info.h \
-		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/QDialog \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QTranslator \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/qtranslator.h \
+		../../../Qt/5.15.0/mingw81_32/include/QtCore/QEvent \
+		info.h \
+		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/QDialog \
 		ui_mainwindow.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QVariant \
 		../../../Qt/5.15.0/mingw81_32/include/QtWidgets/QApplication \
@@ -1816,7 +1823,6 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtGui/qaccessibleplugin.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtGui/qbackingstore.h \
 		../../../Qt/5.15.0/mingw81_32/include/QtGui/qwindow.h \
-		../../../Qt/5.15.0/mingw81_32/include/QtCore/QEvent \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QMargins \
 		../../../Qt/5.15.0/mingw81_32/include/QtCore/QRect \
 		../../../Qt/5.15.0/mingw81_32/include/QtGui/qsurface.h \
