@@ -46,7 +46,7 @@ void Create_bot_window::on_CreateBotButton_clicked()
 }
 
 void Create_bot_window::on_comadLine_textEdited(const QString &arg1)
-{  
+{
   this->com = arg1;
 }
 
@@ -66,9 +66,17 @@ void Create_bot_window::on_checkBox_5_stateChanged(int arg1)
 void Create_bot_window::on_AddMess_clicked()
 {
     Creator::Func arg;
-    arg.Command = com;
+    arg.Command = ui->comadLine->text();
+    mes = ui->messLine->text();
     arg.FuncName = "Mess";
-    arg.permissions = mes_permiss;
+    if(ui->checkBox_5->isChecked())
+      {
+        arg.permissions = true;
+      }
+    else
+      {
+        arg.permissions = false;
+      }
     bot.add_in_list(arg);
     bot.set_message(mes);
 }
@@ -104,7 +112,7 @@ void Create_bot_window::on_AddFlip_clicked()
   Creator::Func arg;
   arg.Command = "flip";
   arg.FuncName = "flip";
-  if(ui->checkBox->isChecked())
+  if(ui->checkBox_4->isChecked())
     {
       arg.permissions = true;
     }
@@ -112,7 +120,6 @@ void Create_bot_window::on_AddFlip_clicked()
     {
       arg.permissions = false;
     }
-  arg.permissions = flip_permiss;
   bot.add_in_list(arg);
 }
 
@@ -129,7 +136,14 @@ void Create_bot_window::on_AddInfo_clicked()
   Creator::Func arg;
   arg.Command = "info";
   arg.FuncName = "info";
-  arg.permissions = info_permiss;
+  if(ui->checkBox_3->isChecked())
+    {
+      arg.permissions = true;
+    }
+  else
+    {
+      arg.permissions = false;
+    }
   bot.add_in_list(arg);
 }
 
@@ -144,9 +158,16 @@ void Create_bot_window::on_checkBox_2_stateChanged(int arg1)
 void Create_bot_window::on_AddMassMelling_clicked()
 {
   Creator::Func arg;
-  arg.Command = com;
+  arg.Command = "mass";
   arg.FuncName = "mass";
-  arg.permissions = melling_permiss;
+  if(ui->checkBox_2->isChecked())
+    {
+      arg.permissions = true;
+    }
+  else
+    {
+      arg.permissions = false;
+    }
   bot.add_in_list(arg);
 }
 
@@ -163,7 +184,14 @@ void Create_bot_window::on_AddMafia_clicked()
   Creator::Func arg;
   arg.Command = "mafia";
   arg.FuncName = "mafia";
-  arg.permissions = game_permiss;
+  if(ui->checkBox_6->isChecked())
+    {
+      arg.permissions = true;
+    }
+  else
+    {
+      arg.permissions = false;
+    }
   bot.add_in_list(arg);
 }
 
@@ -175,6 +203,7 @@ void Create_bot_window::on_pushButton_clicked()
 
 void Create_bot_window::on_CreateButton_clicked()
 {
+    bot.set_info(ui->BotsName->text(), ui->Token->text(), ui->comboBox->currentText());
     bot.set_directory(ui->dirLine->text());
     bot.create_bot_file();
 }

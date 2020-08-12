@@ -15,7 +15,7 @@ void Bot::set_token(QString token)   //Set bot's token
 {
     Bot::Token = token;
 }
-void Bot::set_prefix(QChar prefix)   //Set bot's commands prefix
+void Bot::set_prefix(QString prefix)   //Set bot's commands prefix
 {
     Bot::Prefix = prefix;
 }
@@ -27,7 +27,7 @@ QString Bot::get_token() //Return bot's token
 {
     return Bot::Token;
 }
-QChar Bot::get_prefix()  //Return bot's commands prefix
+QString Bot::get_prefix()  //Return bot's commands prefix
 {
     return Bot::Prefix;
 }

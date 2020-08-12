@@ -10,7 +10,7 @@ class Creator
 {
 public:
     Creator()=default;
-    Creator(const QString Name, const QString token, QChar prefix)
+    Creator(const QString Name, const QString token, QString prefix)
     {
       bot.set_name(Name);
       bot.set_token(token);
@@ -22,6 +22,7 @@ public:
       QString Command;
       bool permissions;
     };
+    void set_info(const QString Name, const QString token, QString prefix);
     void set_directory(QString dir);
     void set_func_list(vector<Func> List);
     void add_in_list(Func arg);

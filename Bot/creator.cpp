@@ -4,6 +4,13 @@
 #include<QTextStream>
 using namespace std;
 QTextStream out(stdout);
+
+void Creator::set_info(const QString Name, const QString token, QString prefix)
+{
+  bot.set_name(Name);
+  bot.set_token(token);
+  bot.set_prefix(prefix);
+}
 void Creator::set_directory(QString dir)
 {
     Creator::directory = dir;
@@ -62,7 +69,7 @@ void Creator::create_bot_file()
           if(FuncList[i].FuncName == "Mess")
             {
               out <<"( ctx ):" << endl;
-              out << "await ctx.send( '" << this->message << "')" << endl;
+              out << "\tawait ctx.send( '" << this->message << "')" << endl;
             }
           if(FuncList[i].FuncName == "Clear")
             {
@@ -105,6 +112,42 @@ void Creator::create_bot_file()
               out << "\tprint(ctx.author.name + '[command]: mass_send ( ' + mes + ' )')" << endl;
               out << "\tfor i in client.get_channel(697822717050748979).members:" <<endl;
               out << "\t\tawait i.send(mes)" << endl;
+            }
+          if(FuncList[i].FuncName == "mafia")
+            {
+              out << "( ctx ):" << endl;
+              out << "\tprint(ctx.author.name + '[command]: Mafia Game')" << endl;
+              out << "\tif len(client.get_channel(714072862197022821).members) < 4:" <<endl;
+              out << "\t\tawait ctx.channel.send(' Too few people to play !!! ')" <<endl;
+              out << "\telse:" <<endl;
+              out << "\t\ttemp = 0" <<endl;
+              out << "\t\tply_roles = []" <<endl;
+              out << "\t\trole_list = []" <<endl;
+              out << "\t\tfor i in range(0, len(client.get_channel(714072862197022821).members)):" <<endl;
+              out << "\t\t\trole_list.append(i)" <<endl;
+              out << "\t\tif len(client.get_channel(714072862197022821).members) > 7:" <<endl;
+              out << "\t\t\trole_list[4] = 0" <<endl;
+              out << "\t\trandom.shuffle(role_list)" <<endl;
+              out << "\t\trandom.shuffle(form_list)" <<endl;
+              out << "\t\tfor i in client.get_channel(714072862197022821).members:" <<endl;
+              out << "\t\t\tif role_list[temp] == 0:" <<endl;
+              out << "\t\t\t\tply_roles.append('Mafia is ' + i.name)" <<endl;
+              out << "\t\t\tif role_list[temp] == 1:" <<endl;
+              out << "\t\t\t\tply_roles.append('Commissioner is ' + i.name)" <<endl;
+              out << "\t\t\tif role_list[temp] == 2:" <<endl;
+              out << "\t\t\t\tved = i" <<endl;
+              out << "\t\t\tif len(client.get_channel(714072862197022821).members) > 5:" <<endl;
+              out << "\t\t\t\tif role_list[temp] == 3:" <<endl;
+              out << "\t\t\t\t\tply_roles.append('Doctor is ' + i.name)" <<endl;
+              out << "\t\t\t\telse:" <<endl;
+              out << "\t\t\t\t\tif role_list[temp]>3:" <<endl;
+              out << "\t\t\t\t\t\tawait i.send('Peace')" <<endl;
+              out << "\t\t\telse:" <<endl;
+              out << "\t\t\t\tif role_list[temp] > 2:" <<endl;
+              out << "\t\t\t\t\tawait i.send('Peace') " <<endl;
+              out << "\t\t\ttemp+=1" <<endl;
+              out << "\t\tfor i in range(len(ply_roles)):" <<endl;
+              out << "\t\t\tawait ved.send(str(ply_roles[i]))" <<endl;
             }
 
         }
