@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../info.h"
+#include "../../../../123/Bot_creator/Bot/info.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

@@ -458,7 +458,7 @@ background-color:rgb(170, 0, 0);
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-image: url(:/resourec/img/kisspng-logo-brand-font-forward-button-5b29b23921a2a6.1743000215294592571378.jpg) 0 0 0 0;</string>
+          <string notr="true">border-image: url(:/resourec/img/applicationdefaulticon.png) 0 0 0 0;</string>
          </property>
          <property name="text">
           <string/>
