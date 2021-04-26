@@ -13,4 +13,6 @@
 
 ### Выполнили:
 > * :octocat: Студент 2  курса Герасимов Михаил
+>   * [GitHub](https://github.com/Dorrrke)
 > * :octocat: Студент 2 курса Безобразов Александр
+>    * [GitHub](https://github.com/ultraxion2000)
